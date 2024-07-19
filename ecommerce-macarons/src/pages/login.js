@@ -23,8 +23,7 @@ export default function Login() {
     const result = await response.json();
 
     if (response.ok) {
-      // Redirige vers une page protégée ou la page d'accueil
-      router.push('/dashboard'); // Modifier selon votre besoin
+      router.push('/');
     } else {
       setError(result.error || 'Une erreur est survenue.');
     }
