@@ -30,7 +30,7 @@ export default function Signup() {
     const result = await response.json();
 
     if (response.ok) {
-      router.push('/login'); // Redirige vers la page de connexion après inscription
+      router.push('/login');
     } else {
       setError(result.error || 'Une erreur est survenue.');
     }
