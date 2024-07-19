@@ -66,12 +66,14 @@ export default function Home() {
             <br />
             <div className={styles.products}>
               <Product
+                id={1}
                 name="Macaron 1"
                 description="Delicious macaron"
                 price="5"
                 imageUrl="/macaron-vanille.jpg"
               />
               <Product
+                id={2}
                 name="Macaron 2"
                 description="Tasty macaron"
                 price="6"

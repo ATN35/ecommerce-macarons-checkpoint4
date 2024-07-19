@@ -1,12 +1,34 @@
+/* src/styles/Cart.module.css */
+
 .container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh; /* Assure que le conteneur prend toute la hauteur de la fenêtre */
+  position: relative;
+}
+
+.backgroundImageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.backgroundImage {
+  filter: blur(8px);
+  z-index: -1;
 }
 
 .main {
-  flex: 1; /* Pour que le contenu principal s'étire pour remplir l'espace disponible */
+  flex: 1; /* Permet au main de se développer pour occuper l'espace restant */
   padding: 20px;
+  background: rgba(255, 255, 255, 0.9); /* Fond semi-transparent */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
 }
 
 .cartItems {
@@ -16,33 +38,30 @@
   padding: 10px;
 }
 
-.cartItems > div {
+.cartItem {
   display: flex;
   align-items: center;
   padding: 10px 0;
   border-bottom: 1px solid #eee;
 }
 
-.cartItems > div:last-child {
+.cartItem:last-child {
   border-bottom: none;
 }
 
-.cartItems img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
+.itemImage {
   margin-right: 10px;
 }
 
-.cartItems .itemDetails {
+.itemDetails {
   flex: 1;
 }
 
-.cartItems .itemName {
+.itemName {
   font-weight: bold;
 }
 
-.cartItems .itemPrice {
+.itemPrice {
   margin-top: 5px;
   color: #0070f3;
 }
