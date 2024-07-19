@@ -16,7 +16,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  max-width: 400px;
   width: 100%;
 }
 
@@ -29,21 +29,27 @@
 }
 
 .radioGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.radioGroup p {
   margin-bottom: 10px;
 }
 
 .radioGroup label {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .radioGroup input {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
-.form button {
-  padding: 10px 20px;
+.button {
+  padding: 10px;
   font-size: 16px;
   background-color: #0070f3;
   color: white;
@@ -52,19 +58,22 @@
   cursor: pointer;
 }
 
-.form button:hover {
+.button:hover {
   background-color: #0059b3;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
 }
 
 .loginLink {
   margin-top: 20px;
-  text-align: center;
 }
 
 .loginButton {
   color: #0070f3;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .loginButton:hover {

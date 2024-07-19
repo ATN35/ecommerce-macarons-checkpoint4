@@ -6,8 +6,8 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-      <Link href="/" legacyBehavior>
-        <Image src="/logo-macarons.png" alt="Logo" width={60} height={60} />
+        <Link href="/" legacyBehavior>
+          <Image src="/logo-macarons.png" alt="Logo" width={60} height={60} />
         </Link>
       </div>
       <div className={styles.icons}>
