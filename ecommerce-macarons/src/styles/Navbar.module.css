@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #552909;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.icons {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.icon {
+  font-size: 24px;
+  cursor: pointer;
+}

@@ -1,0 +1,74 @@
+.commentForm {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.commentForm h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.commentForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+.commentForm .rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.commentForm .rating label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.commentForm .star {
+  font-size: 24px;
+  cursor: pointer;
+  color: #ddd;
+  transition: color 0.2s;
+}
+
+.commentForm .star.filled {
+  color: #ffd700;
+}
+
+.commentForm textarea {
+  min-height: 100px;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.commentForm input[type="text"],
+.commentForm input[type="email"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.commentForm button {
+  padding: 10px 15px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #0070f3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.commentForm button:hover {
+  background-color: #005bb5;
+}

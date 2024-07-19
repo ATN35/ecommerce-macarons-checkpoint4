@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero, .story {
+  position: relative;
+  margin: 40px 0;
+}
+
+.heroContent, .storyContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.heroImage, .storyImage {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+}
+
+.hero h2, .story h2 {
+  margin: 20px 0;
+  color: #000000;
+  font-size: 2rem;
+}
+
+.hero p, .story p {
+  margin: 10px 0;
+  color: #000000;
+  font-size: 1.2rem;
+  background: rgb(235, 183, 116);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.shop {
+  margin: 40px 0;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.comments {
+  margin: 40px 0;
+}
+
+.h1 {
+background-color: rgb(235, 183, 116);
+}
